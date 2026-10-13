@@ -34,7 +34,13 @@ class StandResponse(BaseModel):
     nicht_zugeordnet: list[str]
 
 
-app = FastAPI(title="ECTS-Tracker")
+app = FastAPI(title="ECTS-Tracker", version="1.1")
+
+
+@app.get("/")
+async def info():
+    """Kurzinfo zum Dienst, damit ein Aufruf der Basis-URL nicht ins Leere läuft."""
+    return {"dienst": "ECTS-Tracker", "version": "1.1", "doku": "/docs", "endpunkt": "POST /ects-stand"}
 
 
 @app.post("/ects-stand", response_model=StandResponse)
