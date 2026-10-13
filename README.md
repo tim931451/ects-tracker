@@ -24,7 +24,7 @@ Das Repository ist als Web Service auf render.com deployt: https://ects-tracker.
 - Build Command: `pip install -r requirements.txt`
 - Start Command: `uvicorn Code.main:app --host 0.0.0.0 --port $PORT`
 
-Änderungen werden lokal in VS Code gemacht, committet und auf GitHub gepusht. Danach baut render.com den Web Service neu (bei Bedarf über Manual Deploy). Der Free Plan legt den Dienst nach Inaktivität schlafen, der erste Aufruf dauert dann rund eine Minute. Ein Aufruf aus Python steht in `Code/test_API.ipynb`.
+Änderungen werden lokal in VS Code gemacht, committet und auf GitHub gepusht. Danach baut render.com den Web Service automatisch neu (Auto-Deploy bei jedem Commit auf main, sonst über Manual Deploy). Der Free Plan legt den Dienst nach Inaktivität schlafen, der erste Aufruf dauert dann rund eine Minute. Ein Aufruf aus Python steht in `Code/test_API.ipynb`.
 
 ## Aufbau
 
