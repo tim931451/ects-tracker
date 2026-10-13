@@ -26,6 +26,13 @@ Das Repository ist als Web Service auf render.com deployt: https://ects-tracker.
 
 Änderungen werden lokal in VS Code gemacht, committet und auf GitHub gepusht. Danach baut render.com den Web Service automatisch neu (Auto-Deploy bei jedem Commit auf main, sonst über Manual Deploy). Der Free Plan legt den Dienst nach Inaktivität schlafen, der erste Aufruf dauert dann rund eine Minute. Ein Aufruf aus Python steht in `Code/test_API.ipynb`.
 
+## Erweiterung Version 1.2: Konfliktwarnung bei Terminüberschneidungen
+
+Jedes Modul kann optional wöchentliche Termine mitgeben (`tag` als Mo bis So, `von` und `bis` im Format HH:MM). Die API prüft alle Termine paarweise und gibt unter `konflikte` jede Überschneidung mit Tag, beiden Modulen und dem überlappenden Zeitfenster aus. Direkt aneinander anschliessende Termine gelten nicht als Konflikt. Ungültige Eingaben (unbekannter Tag, falsches Zeitformat, `von` nach `bis`) beantwortet die API mit Status 422. Anfragen ohne Termine funktionieren wie bisher.
+
+- `beispiel_anfrage.json` Stundenplan HS 2026, ohne Konflikt
+- `beispiel_konflikt.json` dieselbe Anfrage mit einem zusätzlichen Beispielmodul am Freitagvormittag, das sich mit Maschinelles Lernen und wissensbasierte Systeme überschneidet
+
 ## Aufbau
 
 - `Code/logik.py` Business-Logik, unabhängig von der API

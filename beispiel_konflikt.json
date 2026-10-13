@@ -1,0 +1,21 @@
+{
+  "bisher": {
+      "Künstliche Intelligenz": 36,
+      "Wirtschaftsinformatik": 18,
+      "Wirtschaft": 6,
+      "Anwendung und Praxis": 27
+  },
+  "module": [
+    {"name": "Praxisprojekt", "ects": 9, "gruppe": "Anwendung und Praxis", "termine": [{"tag": "Do", "von": "13:15", "bis": "17:00"}]},
+    {"name": "Maschinelles Lernen und wissensbasierte Systeme", "ects": 9, "gruppe": "Anwendung und Praxis", "termine": [{"tag": "Fr", "von": "08:15", "bis": "12:00"}]},
+    {"name": "Marketing", "ects": 6, "gruppe": "Wirtschaft", "termine": [{"tag": "Mo", "von": "08:15", "bis": "12:00"}]},
+    {"name": "Generative KI & Agentensysteme", "ects": 6, "gruppe": "Künstliche Intelligenz", "termine": [{"tag": "Mo", "von": "13:15", "bis": "17:00"}]},
+    {"name": "AI Operations", "ects": 3, "gruppe": "Künstliche Intelligenz", "termine": [{"tag": "Di", "von": "08:15", "bis": "10:00"}]},
+    {"name": "Deep Learning", "ects": 3, "gruppe": "Künstliche Intelligenz", "termine": [{"tag": "Mi", "von": "15:15", "bis": "17:00"}]},
+    {"name": "Reinforcement Learning", "ects": 3, "gruppe": "Künstliche Intelligenz", "termine": [{"tag": "Mi", "von": "13:15", "bis": "15:00"}]},
+    {"name": "Robotics", "ects": 3, "gruppe": "Künstliche Intelligenz", "termine": [{"tag": "Di", "von": "10:15", "bis": "12:00"}]},
+    {"name": "MAKEathon", "ects": 3, "gruppe": "Künstliche Intelligenz"},
+    {"name": "Entrepreneurship", "ects": 3, "gruppe": "Wirtschaft", "termine": [{"tag": "Fr", "von": "15:15", "bis": "17:00"}]},
+    {"name": "Cyber Security (Beispiel)", "ects": 3, "gruppe": "Wirtschaftsinformatik", "termine": [{"tag": "Fr", "von": "09:00", "bis": "12:00"}]}
+  ]
+}
